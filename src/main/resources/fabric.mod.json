@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "inferno_agriculture",
+  "version": "${version}",
+
+  "name": "Inferno Agriculture",
+  "description": "Your dream of running a nether farm finally comes true!",
+  "authors": [
+    "Peakstep"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Peakstep233",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/inferno_agriculture/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.intelligentcreations.infernoagriculture.InfernoAgriculture"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.intelligentcreations.infernoagriculture.InfernoAgricultureClient"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
